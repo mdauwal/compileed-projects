@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+
+    
+    /* internal CSS */
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}  
+
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background:  url(lady-1.jpeg) no-repeat;
+    background-size:auto;
+    background-position: center ;
+
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: #fdf6fa;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* background: yellow; */
+    margin: 30px 0 ;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);  
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fdf6fa;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fdf6fa;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #fdf6fa;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.btn:hover{
+    background: blue; 
+    color: #fdf6fa; 
+    
+}
+
+
+.register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+
+.register-link a{
+    color: #fdf6fa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+</style>
+<body>
+
+    <div class="wrapper">
+
+        <form id="loginForm" action="">
+                <!-- inline CSS -->
+            <h1 style="color: #fdf6fa;">Login</h1> 
+            <div class="input-box">
+                <input type="email" id="emailInput" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+        
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="bx bx-hide"></i>
+                </span>
+                <p class="enter-password-alert" id="enter-password-alert"></p>
+            </div>
+            
+        
+        
+            <button type="submit" class="btn">Login</button>
+        
+            <div class="register-link">
+                <p>Dont have an account? <a href="signup.html">Register</a> </p>
+                <p>goto <a href="index.html">home</a> </p>
+            </div>
+        </form>
+        
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
