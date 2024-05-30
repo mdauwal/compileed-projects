@@ -70,9 +70,8 @@
   }
   .btnLogin{
     background: blue;
-    color: blue;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 15px 30px;
 
   }
   /* Hero Styles */
@@ -111,7 +110,7 @@
   
   .form{
     width: 250px;
-    height: 380px;
+    height: 370px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     border-radius: 10px;
     padding: 25px;
